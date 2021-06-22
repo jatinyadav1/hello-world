@@ -18,7 +18,7 @@ spec:
         app: first
     spec:
       containers:
-      - image: jatinyadav/devops_project2:latest
+      - image: jatinyadav/docker_project2:latest
         name: devopsjenk
         resources: {}
 status: {}
