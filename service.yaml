@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: devopsjenk
+  labels:
+    name: first-svc
+    app: first-svc
+spec:
+  selector:
+    app: first
+  type: NodePort
+  ports:
+   - port: 8080
+     name: http
+     targetPort: 8080
+     nodePort: 31000
+     protocol: TCP
